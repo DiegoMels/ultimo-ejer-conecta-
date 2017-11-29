@@ -30,7 +30,7 @@ public class ControladorGuardar implements MouseListener  {
         try {
             consulta = new Consulta();
             
-            consulta.GrabarCalculo(nombre.getText().toString(), apellido.getText().toString(), dni.getText().toString(), calle.getText().toString(), altura.getText().toString());
+            consulta.GrabarCalculo(nombre.getText(), apellido.getText(), dni.getText(), calle.getText(), altura.getText());
             
            
         } catch (SQLException ex) {
